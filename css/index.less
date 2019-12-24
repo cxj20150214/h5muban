@@ -23,6 +23,7 @@
             display: flex;
             flex-direction: column;
             padding: 20px;
+
             a {
                 display: block;
 
@@ -90,117 +91,138 @@
         }
     }
 }
+
 // 合作商
-.official{
-    .official1{
+.official {
+    .official1 {
         width: 100%;
         height: 150px;
         border-bottom: 1px solid #f5f5f5;
         border-radius: 5px;
-        h2{
+
+        h2 {
             line-height: 150px;
             font-size: 36px;
             color: #b38006;
             padding-left: 30px;
             position: relative;
-            &::before{
-                content:'';
+
+            &::before {
+                content: '';
                 position: absolute;
-                left:0px;
-                width:5px;
-                top:65px;
+                left: 0px;
+                width: 5px;
+                top: 65px;
                 height: 20px;
                 background-color: #FBD392;
             }
-            span{
-                color:#664630;
+
+            span {
+                color: #664630;
                 margin-left: 30px;
             }
         }
     }
-    .official2{
+
+    .official2 {
         font-size: 32px;
         display: flex;
         flex-direction: column;
-        ul{
-            width:100%;
+
+        ul {
+            width: 100%;
             display: flex;
             flex-direction: row;
             margin-left: -20px;
             margin-top: 30px;
-            li{
-                width:calc(50% - 20px);
+
+            li {
+                width: calc(50% - 20px);
                 margin-left: 20px;
                 text-align: center;
-                border:1px solid #d5d5d5;
+                border: 1px solid #d5d5d5;
                 height: 95px;
                 line-height: 95px;
                 border-radius: 8px;
-                &.active{
+
+                &.active {
                     background: #fffdf8;
-                    border:1px solid #edcfb8;
+                    border: 1px solid #edcfb8;
                 }
             }
         }
     }
-    .official3{
+
+    .official3 {
         font-size: 32px;
         display: flex;
         flex-direction: column;
         margin-top: 30px;
-        ul{
-            width:100%;
+
+        ul {
+            width: 100%;
             display: flex;
             flex-direction: row;
             margin-left: -20px;
             margin-top: 30px;
-            li{
-                width:calc(50% - 20px);
+
+            li {
+                width: calc(50% - 20px);
                 margin-left: 20px;
                 text-align: center;
-                border:1px solid #d5d5d5;
+                border: 1px solid #d5d5d5;
                 height: 250px;
                 border-radius: 8px;
-                padding:20px;
-                img{
-                    margin:20px auto 20px;
+                padding: 20px;
+
+                img {
+                    margin: 20px auto 20px;
                 }
-                &.active{
+
+                &.active {
                     background: #fffdf8;
-                    border:1px solid #edcfb8;
+                    border: 1px solid #edcfb8;
                 }
             }
         }
     }
-    .qy{
+
+    .qy {
         display: flex;
         margin-top: 30px;
         flex-direction: column;
-        img{
-            width:600px;
-            margin:0px auto;
+
+        img {
+            width: 600px;
+            margin: 0px auto;
         }
-        ul{
+
+        ul {
             font-size: 26px;
             margin-top: 30px;
             color: #666666;
-            li{
+
+            li {
                 height: 90px;
                 border-bottom: 1px solid #d5d5d5;
                 line-height: 90px;
-                &:first-child{
+
+                &:first-child {
                     line-height: normal;
-                    p{
+
+                    p {
                         padding: 15px;
-                        &:first-child{
-                            width:150px;
+
+                        &:first-child {
+                            width: 150px;
                             text-align: left;
                             color: #ff9900;
                             font-size: 30px;
                         }
                     }
                 }
-                p{
+
+                p {
                     float: left;
                     width: 130px;
                     font-size: 24px;
@@ -209,34 +231,174 @@
             }
         }
     }
-    .buy{
-        width:100%;
+
+    .buy {
+        width: 100%;
         line-height: 100px;
         position: fixed;
         bottom: 0px;
         left: 0px;
         height: 100px;
         border-top: 1px solid #d5d5d5;
-        padding-left:40px;
-        p{
+        padding-left: 40px;
+
+        p {
             font-size: 28px;
             float: left;
-            span{
+
+            span {
                 font-size: 36px;
                 color: #ff5c5d;
             }
         }
-        .buy_button{
+
+        .buy_button {
             float: right;
             font-size: 36px;
             line-height: 100px;
-            width:280px;
+            width: 280px;
             background-color: #ffd99d;
             text-align: center;
             color: #664630;
         }
     }
 }
-#nian_box{
+
+#nian_box {
     display: none;
+}
+
+// 战队
+.combat {
+    width: 750px;
+    background-image: url(../img/bg1.png);
+    background-size: 750px 330px;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+
+    .box1 {
+        height: 275px;
+        background-color: #fff;
+        margin-top: 70px;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .icon_head {
+            position: absolute;
+            border-radius: 100%;
+            overflow: hidden;
+            top: -50px;
+            background-color: #fff;
+        }
+
+        .box1_1 {
+            height: 130px;
+            border-bottom: 1px solid #ddd;
+            padding: 25px;
+
+            .txt {
+                width: 268px;
+                height: 90px;
+                float: left;
+                margin-left: 150px;
+                font-size: 24px;
+                color: #ff5c5d;
+
+                .tit {
+                    font-size: 32px;
+                    margin-bottom: 10px;
+                    color: #333;
+                }
+            }
+
+            .id {
+                color: #ffbc4a;
+                border: 1px solid #ffbc4a;
+                height: 50px;
+                font-size: 24px;
+                line-height: 50px;
+                text-align: center;
+                border-radius: 8px;
+                float: right;
+                padding: 0px 15px;
+            }
+        }
+
+        .box1_2 {
+            font-size: 24px;
+            color: #666;
+            padding: 30px;
+
+            span {
+                color: #ff5c5d;
+            }
+        }
+    }
+
+    .box2 {
+        height: auto;
+        background-color: #fff;
+        margin-top: 35px;
+        border-radius: 8px;
+
+        .box2_1 {
+            width: 100%;
+            padding-left: 20px;
+            font-size: 32px;
+            height: 110px;
+            line-height: 110px;
+            border-bottom: 1px solid #ddd;
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 5px;
+                height: 24px;
+                background-color: #fe616a;
+                position: absolute;
+                left: 0px;
+                top: 40px;
+            }
+        }
+
+        ul {
+            margin-top: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+
+            li {
+                height: 130px;
+                line-height: 130px;
+                img {
+                    width: 90px;
+                    height: 90px;
+                    float: left;
+                    margin-top: 25px;
+                }
+
+                .txt {
+                    width:520px;
+                    float: right;
+                    border-bottom: 1px solid #d5d5d5;
+                    .name {
+                        font-size: 30px;
+                        float: left;
+                        width:300px;
+                        overflow: hidden;
+                        height: 130px;
+                    }
+                    .id {
+                        font-size: 30px;
+                        color: #666;
+                        float: right;
+                    }
+                }
+
+            }
+        }
+    }
 }

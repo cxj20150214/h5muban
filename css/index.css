@@ -224,3 +224,121 @@
 #nian_box {
   display: none;
 }
+.combat {
+  width: 750px;
+  background-image: url(../img/bg1.png);
+  background-size: 750px 330px;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.combat .box1 {
+  height: 275px;
+  background-color: #fff;
+  margin-top: 70px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.combat .box1 .icon_head {
+  position: absolute;
+  border-radius: 100%;
+  overflow: hidden;
+  top: -50px;
+  background-color: #fff;
+}
+.combat .box1 .box1_1 {
+  height: 130px;
+  border-bottom: 1px solid #ddd;
+  padding: 25px;
+}
+.combat .box1 .box1_1 .txt {
+  width: 268px;
+  height: 90px;
+  float: left;
+  margin-left: 150px;
+  font-size: 24px;
+  color: #ff5c5d;
+}
+.combat .box1 .box1_1 .txt .tit {
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #333;
+}
+.combat .box1 .box1_1 .id {
+  color: #ffbc4a;
+  border: 1px solid #ffbc4a;
+  height: 50px;
+  font-size: 24px;
+  line-height: 50px;
+  text-align: center;
+  border-radius: 8px;
+  float: right;
+  padding: 0px 15px;
+}
+.combat .box1 .box1_2 {
+  font-size: 24px;
+  color: #666;
+  padding: 30px;
+}
+.combat .box1 .box1_2 span {
+  color: #ff5c5d;
+}
+.combat .box2 {
+  height: auto;
+  background-color: #fff;
+  margin-top: 35px;
+  border-radius: 8px;
+}
+.combat .box2 .box2_1 {
+  width: 100%;
+  padding-left: 20px;
+  font-size: 32px;
+  height: 110px;
+  line-height: 110px;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+.combat .box2 .box2_1::before {
+  content: '';
+  width: 5px;
+  height: 24px;
+  background-color: #fe616a;
+  position: absolute;
+  left: 0px;
+  top: 40px;
+}
+.combat .box2 ul {
+  margin-top: 20px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.combat .box2 ul li {
+  height: 130px;
+  line-height: 130px;
+}
+.combat .box2 ul li img {
+  width: 90px;
+  height: 90px;
+  float: left;
+  margin-top: 25px;
+}
+.combat .box2 ul li .txt {
+  width: 520px;
+  float: right;
+  border-bottom: 1px solid #d5d5d5;
+}
+.combat .box2 ul li .txt .name {
+  font-size: 30px;
+  float: left;
+  width: 300px;
+  overflow: hidden;
+  height: 130px;
+}
+.combat .box2 ul li .txt .id {
+  font-size: 30px;
+  color: #666;
+  float: right;
+}
