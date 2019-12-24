@@ -3,6 +3,9 @@ body{
     margin:0px auto;
     background: #F8F9FC;
 }
+a:focus, a:hover{
+    text-decoration: none;
+}
 @media screen and (max-width: 750px) {
     body {
         width: 100vw;
