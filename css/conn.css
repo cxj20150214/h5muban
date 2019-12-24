@@ -1,0 +1,115 @@
+.flex{
+    display: -webkit-flex;
+    display: flex;
+}
+.ce-header{
+    background-image: url("../img/img23.png");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 272px;
+    color: #fff;
+}
+.ce-heli{
+    display: -webkit-flex;
+    display: flex;
+    padding: 50px;
+    justify-content: space-between;
+}
+.ce-logo img{
+    width: 130px;
+    height: 130px;
+    }
+.ce-tel{
+    font-size: 48px;
+    font-weight: bold;
+}
+.ce-id{
+    font-size: 26px;
+}
+.ce-vip{
+    font-size: 24px;
+}
+.ce-dp{
+    display: -webkit-flex;
+    display: flex;
+    justify-content: space-between;
+}
+.ce-vip{
+    background-image: url("../img/vip.png");
+    background-repeat: no-repeat;
+    width: 114px;
+    text-align: right;
+    margin-left: 20px;
+    padding-right: 10px;
+    line-height: 40px;
+}
+.ce-change{
+    width: 80px;
+    height: 40px;
+    line-height: 40px;
+    background-color: rgba(255, 255, 255, .2);
+    border-radius: 10px;
+    text-align: center;
+}
+.ce-cont1{
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+}
+.ce-cont1{
+    justify-content:space-evenly;
+}
+.ce-cont2{
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+    font-size: 32px;
+    margin: 25px 30px;
+}
+.ce-lia{
+    padding-left: 35px;
+    padding-right: 35px;
+    display: block;
+}
+a.ce-lia{
+    color: #333333;
+    text-decoration: none;
+}
+.ce-lifont{
+    margin-left: 30px;
+    padding-left: 60px;
+    padding-top: 40px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #f4f3f8;
+  
+}
+.ce-lifont1{
+    background: url("../img/img2.png") no-repeat left 45px;   
+}
+.ce-lifont2{
+    background: url("../img/img3.png") no-repeat left 45px;   
+}
+.ce-lifont3{
+    background: url("../img/img4.png") no-repeat left 45px;   
+}
+.ce-lifont4{
+    background: url("../img/img5.png") no-repeat left 45px;   
+}
+.ce-lifont5{
+    background: url("../img/img6.png") no-repeat left 45px;   
+}
+.ce-lifont6{
+    background: url("../img/img7.png") no-repeat left 45px;   
+}
+.ce-lifont7{
+    background: url("../img/img8.png") no-repeat left 45px;   
+}
+.ce-lifont8{
+    background: url("../img/img9.png") no-repeat left 45px;   
+}
+.ce-lifont9{
+    background: url("../img/img10.png") no-repeat left 45px;   
+}
+.ce-img1{
+    float: right;
+    padding-top: 8px;
+}
