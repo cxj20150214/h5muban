@@ -1,0 +1,11 @@
+body{
+    width:750px;
+    margin:0px auto;
+    background: #F8F9FC;
+}
+@media screen and (max-width: 750px) {
+    body {
+        width: 100vw;
+        height: auto;
+    }
+}
