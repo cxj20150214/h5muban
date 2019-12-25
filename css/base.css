@@ -12,3 +12,38 @@ a:focus, a:hover{
         height: auto;
     }
 }
+
+.foot {
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100px;
+    background-color: #fcfcfc;
+    border-top: 1px solid #d5d5d5;
+  }
+  .foot ul {
+    display: flex;
+    flex-direction: row;
+  }
+  .foot ul li {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+  }
+  .foot ul li a {
+    display: flex;
+    flex-direction: column;
+  }
+  .foot ul li img {
+    width: 39px;
+    margin: 15px auto 10px;
+  }
+  .foot ul li h2 {
+    font-size: 22px;
+    color: #D7D7D7;
+    text-align: center;
+  }
+  .foot ul li h2.active {
+    color: #ff5c5d;
+  }
