@@ -147,3 +147,88 @@
   font-size: 28px;
   line-height: 65px;
 }
+.news {
+  margin-bottom: 150px;
+}
+.news ul {
+  margin-top: 40px;
+}
+.news ul li {
+  height: 260px;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 40px;
+}
+.news ul li .title {
+  height: 100px;
+  border-bottom: 1px solid #d5d5d5;
+  width: 100%;
+  font-size: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 50px;
+  padding: 25px;
+}
+.news ul li .title .time {
+  font-size: 26px;
+  color: #999;
+}
+.news ul li .txt {
+  padding: 25px;
+  font-size: 28px;
+  display: flex;
+  height: 100px;
+  overflow: hidden;
+}
+.news ul li::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #26ce51;
+  right: 15px;
+  bottom: 15px;
+}
+.find {
+  margin-bottom: 150px;
+}
+.find ul {
+  margin-top: 40px;
+}
+.find ul li {
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 40px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+.find ul li .title {
+  width: 100%;
+  height: 265px;
+}
+.find ul li .title img {
+  height: 265px;
+}
+.find ul li .title .time {
+  font-size: 26px;
+  color: #999;
+}
+.find ul li .txt {
+  padding: 25px;
+  display: flex;
+  height: 150px;
+  overflow: hidden;
+  flex-direction: column;
+}
+.find ul li .txt p {
+  font-size: 32px;
+}
+.find ul li .txt .time {
+  font-size: 24px;
+  color: #999;
+  margin-top: 10px;
+}
