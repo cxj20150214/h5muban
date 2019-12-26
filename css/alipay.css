@@ -232,3 +232,50 @@
   color: #999;
   margin-top: 10px;
 }
+.login .title {
+  font-size: 50px;
+  margin-top: 120px;
+}
+.login .xy {
+  font-size: 24px;
+  text-align: center;
+  margin-top: 60px;
+}
+.login .official3 {
+  font-size: 32px;
+  display: flex;
+  flex-direction: row;
+  margin-top: 30px;
+  line-height: 100px;
+  border-bottom: 1px solid #d5d5d5;
+  justify-content: space-between;
+}
+.login .official3 .button {
+  float: right;
+  margin-right: 20px;
+  color: #ff5c5d;
+}
+.login .official3 h2 {
+  float: left;
+  line-height: 100px;
+}
+.login .official3 .number {
+  border: 0px;
+  text-align: left;
+}
+.login .official3 .all {
+  color: #ffbc4a;
+  margin-left: 350px;
+}
+.login .buy {
+  width: 600px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  color: #fff;
+  background-color: #FF6064;
+  font-size: 32px;
+  margin: 0px auto;
+  margin-top: 150px;
+  border-radius: 15px;
+}
