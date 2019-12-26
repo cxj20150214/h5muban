@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta id="meta-viewport" name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>赚钱咖</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/base.css">
+    <!-- 首页 -->
+    <link rel="stylesheet" href="css/conn.css">
+</head>
+<script>
+    (function () { //手机版、小程序750设计稿转手机等比例显示
+        if (window.innerWidth < 750) {
+            var bl = (window.innerWidth / 750) * 1.0;
+            document.getElementById('meta-viewport').setAttribute('content', 'width=device-width, initial-scale=' + bl + ', maximum-scale=' + bl + ', minimum-scale=' + bl + ', user-scalable=no');
+        } else {
+            document.getElementById('meta-viewport').setAttribute('content', 'width=device-width, initial-scale=' + 1 + ', maximum-scale=' + 1 + ', minimum-scale=' + 1 + ', user-scalable=no');
+        }
+    })();
+</script>
+
+<body class="bopage2 rankpage">
+    <div class="rank-top" id="ranktop"> 
+        <span class="">接单</span>  
+        <span class="active">挣钱</span>
+        <span class="">发单</span>
+        <span class="">组队</span>   
+    </div>
+    <div class="rank-cont" id="rankcont">
+        <div class="rank-cont1">
+            <p class="rank-p1">接单能手排行榜</p>
+            <p class="rank-p2">在每周一00:00~周日24:00期间，有效接单总数</p>
+            <div class="rank-p3">
+                <div class="rank-p31">
+                    <p class="rank-p4">¥66</p>
+                    <p class="rank-p5"><img src="img/img15.png" alt=""></p>
+                    <p class="rank-p6">令狐冲</p>
+                    <p class="rank-p7">ID:126256</p>
+                    <P class="rank-p8">2022单</P>               
+                </div>
+                <div class="rank-p32">
+                    <p class="rank-p4">¥66</p>
+                    <p class="rank-p5"><img src="img/img15.png" alt=""></p>
+                    <p class="rank-p6">令狐冲</p>
+                    <p class="rank-p7">ID:126256</p>
+                    <P class="rank-p8">2022单</P>               
+                </div>
+                <div class="rank-p33">
+                    <p class="rank-p4">¥66</p>
+                    <p class="rank-p5"><img src="img/img15.png" alt=""></p>
+                    <p class="rank-p6">令狐冲</p>
+                    <p class="rank-p7">ID:126256</p>
+                    <P class="rank-p8">2022单</P>               
+                </div>           
+            </div>
+            <div class="rank-p9">
+                <p class="rank-p10">
+                    <span class="rank-sp1">NO.4</span>
+                    <span class="rank-sp2"><img src="img/img15.png"></span>
+                    <span class="rank-sp3">
+                        <span class="rank-sp6">林平之</span>
+                        <span class="rank-sp7">ID:1261297</span>
+                    </span>
+                    <span class="rank-sp4">奖30元</span>
+                    <span class="rank-sp5">1220单</span>
+                </p>
+                <p class="rank-p10">
+                    <span class="rank-sp1">NO.4</span>
+                    <span class="rank-sp2"><img src="img/img15.png"></span>
+                    <span class="rank-sp3">
+                        <span class="rank-sp6">林平之</span>
+                        <span class="rank-sp7">ID:1261297</span>
+                    </span>
+                    <span class="rank-sp4">奖30元</span>
+                    <span class="rank-sp5">1220单</span>
+                </p>
+            </div>
+        </div>
+        <div class="rank-cont1">222</div>
+        <div class="rank-cont1">3333</div>
+        <div class="rank-cont1">4444</div>
+    </div>
+
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script>
+        $('#ranktop span').click(function(){
+            $(this).addClass('active').siblings().removeClass('active');
+            $("#rankcont .rank-cont1").hide().eq($(this).index()).show();
+        })
+    </script>
+</body>
+
+</html>
