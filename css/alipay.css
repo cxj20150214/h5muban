@@ -147,3 +147,47 @@
   font-size: 28px;
   line-height: 65px;
 }
+.news {
+  margin-bottom: 150px;
+}
+.news ul {
+  margin-top: 40px;
+}
+.news ul li {
+  height: 260px;
+  background-color: #fff;
+  position: relative;
+  margin-bottom: 40px;
+}
+.news ul li .title {
+  height: 100px;
+  border-bottom: 1px solid #d5d5d5;
+  width: 100%;
+  font-size: 32px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  line-height: 50px;
+  padding: 25px;
+}
+.news ul li .title .time {
+  font-size: 26px;
+  color: #999;
+}
+.news ul li .txt {
+  padding: 25px;
+  font-size: 28px;
+  display: flex;
+  height: 100px;
+  overflow: hidden;
+}
+.news ul li::after {
+  content: '';
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background-color: #26ce51;
+  right: 15px;
+  bottom: 15px;
+}
