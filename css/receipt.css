@@ -1,0 +1,142 @@
+.receipt .fl {
+  height: 210px;
+  background-color: #ededed;
+  padding: 30px;
+}
+.receipt .fl .list {
+  margin-left: -25px;
+}
+.receipt .fl .list li {
+  width: calc(20% - 25px);
+  margin-left: 25px;
+  float: left;
+  background-color: #fff;
+  font-size: 28px;
+  text-align: center;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+.receipt .fl .list li a {
+  display: block;
+  padding: 3px 8px;
+}
+.receipt .fl .list li a.active {
+  background-color: #5eb0fa;
+  color: #fff;
+}
+.receipt .fl2 {
+  height: 85px;
+}
+.receipt .fl2 .list {
+  display: flex;
+  flex-direction: row;
+  padding: 0px 20px;
+  border-bottom: 1px solid #999;
+}
+.receipt .fl2 .list li {
+  font-size: 28px;
+  line-height: 85px;
+  width: 20%;
+  text-align: center;
+}
+.receipt .fl2 .list li a {
+  display: block;
+}
+.receipt .fl2 .list li a.active {
+  color: #fd4545;
+}
+.receipt .nr .list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.receipt .nr .list li {
+  height: 160px;
+  border-bottom: 1px solid #d5d5d5;
+  width: 50%;
+  padding: 0px 30px;
+}
+.receipt .nr .list li .box {
+  display: flex;
+  flex-direction: row;
+}
+.receipt .nr .list li .box img {
+  margin-top: 50px;
+  width: 60px;
+  height: 60px;
+}
+.receipt .nr .list li .box .txt {
+  margin-left: 20px;
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  font-size: 24px;
+}
+.receipt .nr .list li .box .txt .box_1 {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 5px;
+}
+.receipt .nr .list li .box .txt .box_1 img {
+  margin-top: 0px;
+  margin-left: 15px;
+}
+.receipt .nr .list li .box .txt h2 {
+  font-size: 28px;
+}
+.receipt .nr .list li .box .txt .t1 {
+  color: #666;
+}
+.receipt .nr .list li .box .txt .t2 {
+  color: #999;
+}
+.receipt .nr .list li .box .txt img {
+  width: 30px;
+  height: 30px;
+  float: left;
+}
+.receipt .ding {
+  width: 100%;
+  height: 100px;
+  background-color: #40b6fe;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+.receipt .ding .list {
+  float: left;
+  margin-left: 100px;
+  margin-top: 10px;
+  flex-direction: row;
+  display: flex;
+}
+.receipt .ding .list li {
+  margin-left: 15px;
+}
+.receipt .ding .list li a {
+  display: block;
+}
+.receipt .ding .list li img {
+  width: 60px;
+}
+.receipt .ding .list li p {
+  text-align: center;
+  color: #fff;
+  margin-top: 5px;
+}
+.receipt .ding .box {
+  float: left;
+  background-color: #fce740;
+  height: 60px;
+  margin-top: 20px;
+  border-radius: 50px;
+  width: 150px;
+  position: absolute;
+  left: -60px;
+  text-align: right;
+  line-height: 30px;
+  font-size: 20px;
+  color: #fd4545;
+  padding-right: 30px;
+}
