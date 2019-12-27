@@ -6,7 +6,7 @@ body{
 a:focus, a:hover{
     text-decoration: none;
 }
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 1200px) {
     body {
         width: 100vw;
         height: auto;
