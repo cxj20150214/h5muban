@@ -232,9 +232,33 @@
   color: #999;
   margin-top: 10px;
 }
-.login .title {
-  font-size: 50px;
+.login .link_box {
+  display: flex;
+  flex-direction: row;
   margin-top: 120px;
+}
+.login .link_box .title {
+  font-size: 50px;
+  position: relative;
+}
+.login .link_box .title::before {
+  position: absolute;
+  content: '';
+  width: 20px;
+  height: 5px;
+  background-color: #FF6064;
+  left: 40px;
+  bottom: -10px;
+  border-radius: 30px;
+}
+.login .link_box .link {
+  font-size: 28px;
+  margin-top: 20px;
+  margin-left: 35px;
+}
+.login .link_box .link a {
+  color: #999;
+  display: block;
 }
 .login .xy {
   font-size: 24px;
@@ -278,4 +302,10 @@
   margin: 0px auto;
   margin-top: 150px;
   border-radius: 15px;
+}
+.login .forget {
+  float: right;
+  font-size: 26px;
+  color: #999;
+  margin-top: 20px;
 }

@@ -278,15 +278,44 @@
 }
 
 .login {
-    .title {
-        font-size: 50px;
+    .link_box {
+        display: flex;
+        flex-direction: row;
         margin-top: 120px;
+
+        .title {
+            font-size: 50px;
+            position: relative;
+            &::before {
+                position: absolute;
+                content: '';
+                width: 20px;
+                height: 5px;
+                background-color: #FF6064;
+                left: 40px;
+                bottom: -10px;
+                border-radius: 30px;
+            }
+        }
+
+        .link {
+            font-size: 28px;
+            margin-top: 20px;
+            margin-left: 35px;
+
+            a {
+                color: #999;
+                display: block;
+            }
+        }
     }
-    .xy{
+
+    .xy {
         font-size: 24px;
         text-align: center;
         margin-top: 60px;
     }
+
     .official3 {
         font-size: 32px;
         display: flex;
@@ -295,11 +324,13 @@
         line-height: 100px;
         border-bottom: 1px solid #d5d5d5;
         justify-content: space-between;
+
         .button {
             float: right;
             margin-right: 20px;
             color: #ff5c5d;
         }
+
         h2 {
             float: left;
             line-height: 100px;
@@ -327,5 +358,11 @@
         margin: 0px auto;
         margin-top: 150px;
         border-radius: 15px;
+    }
+    .forget{
+        float: right;
+        font-size: 26px;
+        color: #999;
+        margin-top: 20px;
     }
 }
