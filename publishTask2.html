@@ -61,17 +61,6 @@
             <label for="ptaski13">其他</label>
         </div>
     </div>
-    <p class="ptask-p33">
-        <span class="ptask-sp4">接单限时<i class="ptask-i1">完成任务限定时间(单位：分钟)</i></span>
-        <span class="ptask-sp41"><input type="text" placeholder="0"></span>
-    </p>
-    <p class="ptask-p33">
-        <span class="ptask-sp4">审核限时<i class="ptask-i1">超时未审核系统默认合格(单位：小时)</i></span>
-        <span class="ptask-sp41"><input type="text" placeholder="0"></span>
-    </p>
-    <div class="ptask-waring">
-        世纪东方酒叟福建搜房救死扶伤山东高速分公司股份水果水果
-    </div>
     <div class="pubtask2">
         <p>支持设备</p>
         <div class="ptask-cont2">
@@ -111,13 +100,8 @@
         <a href="official.html" class="ptask-a1">申请合作商</a>
     </div>
     <div class="ptask-p6">
-        <p class="ptask-p7">
-            <span class="ptask-sp5">审核图样</span>
-            <span class="ptask-sp6">上传验证图样例，</span>
-            <span class="ptask-sp7">最多可上传5张</span>
-            <span class="ptask-p71"><img src="img/right.png" id="pastbtn2"></span>
-        </p>
-        <div class="ptask-p8" id="pastbtn2cont" style="display: none;">
+        <p class="ptask-p7"><span class="ptask-sp5">审核图样</span><span class="ptask-sp6">上传验证图样例，</span><span class="ptask-sp7">最多可上传5张</span></p>
+        <div class="ptask-p8">
             <p><img src="img/img37.png" alt=""></p>
             <label class="sugg-p5" for="sugg-fileimg">
                 <input type="file" id="sugg-fileimg" accept="image/jpeg,image/png,image/gif" style="display: none;">
@@ -126,9 +110,9 @@
     </div>
     <div class="ptask-p9">
         <span class="ptask-sp8">操作说明<i class="ptask-i2">简单易懂的操作指南大幅度提高接单效率</i></span>
-        <span class="ptask-sp9"><img src="img/right.png" id="pastbtn1"></span>
+        <span class="ptask-sp7"></span>
     </div>
-    <div class="ptask-p10" id="pastbtn1cont" style="display: none;">
+    <div class="ptask-p10">
         <div class="ptask-d1">
             <div class="ptask-d2">
                 <p class="ptask-1d2">1</p>
@@ -148,9 +132,6 @@
             <div class="ptask-d4">
                 <textarea  id="" placeholder="输入说明"></textarea>
             </div>
-        </div>
-        <div class="ptask-d5">
-            <button>添加步骤</button>
         </div>
     </div>
     <p class="ptask-c1">文字验证</p>
@@ -182,25 +163,7 @@
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
     <script>
-        $("#pastbtn1").click(function(){
-            if($(this).hasClass("active")){
-                $(this).removeClass("active")
-                $("#pastbtn1cont").hide()
-            }else{
-                $(this).addClass("active")
-                $("#pastbtn1cont").show()
-            }
-        })
-        $("#pastbtn2").click(function(){
-            console.log('ssss')
-            if($(this).hasClass("active")){
-                $(this).removeClass("active")
-                $("#pastbtn2cont").hide()
-            }else{
-                $(this).addClass("active")
-                $("#pastbtn2cont").show()
-            }
-        })
+
     </script>
 </body>
 

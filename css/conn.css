@@ -1103,7 +1103,12 @@ padding-top: 30px;}
     border-bottom: 1px solid #b0b0b0;
     display: -webkit-flex;
     display: flex;
-
+}
+.ptask-p33{
+    padding: 30px;
+    border-top: 1px solid #b0b0b0;
+    display: -webkit-flex;
+    display: flex;
 }
 .ptask-sp1,.ptask-sp8,.ptask-c1,.ptask-c3{
     color: #000;
@@ -1366,10 +1371,45 @@ padding-top: 30px;}
 .eda-p5 p{
     padding-bottom: 15px;
 }
+.ptask-waring{
+    color: #e86666;
+    background-color: #eeeeee;
+    border-top: 1px solid #b0b0b0;
+    font-size: 20px;
+    padding: 15px 25px;
+}
+.ptask-p33 .ptask-sp41 input{width: 80px;}
+/* .ptask-sp9{
+    width: 30px;
+    height: 30px;
+    
+} */
+.ptask-p71{float: right;}
+.ptask-sp9 img,.ptask-p71 img{     
+    transform: rotate(90deg);
+    padding: 20px 30px;
+    display: inline-block;
+}
+.ptask-sp9 img.active,.ptask-p71 img.active{
+    transform: rotate(-90deg);
+}
+.ptask-p9{
+    display: flex;
+    justify-content: space-between;
+}
+.ptask-d5{
+    text-align: center;
+    padding: 20px 30px;
+    border-top: 1px solid #b0b0b0;
 
-
-
-
+}
+.ptask-d5 button{
+    border: 0;
+    background-color: #0098e3;
+    color: #fff;
+    padding: 20px 30px;
+    border-radius: 10px;
+}
 
 
 
