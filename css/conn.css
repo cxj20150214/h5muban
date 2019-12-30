@@ -1410,6 +1410,31 @@ padding-top: 30px;}
     padding: 20px 30px;
     border-radius: 10px;
 }
+.ptask-se1{
+    position: relative;
+}
+.mobileSelect-show .btn {
+    background: #0a8ddf;
+     border-radius: 10px;
+     padding: 5px 15px;
+     color: #ffffff;
+     padding: 15px 25px;
+     text-align: center;
+ }
+ .task-changeicon{
+    background: url("../img/img47.png") left center no-repeat;
+    background-size: 100%;
+    border: 0;
+    width: 84px;
+    height: 90px;
+    position: fixed;
+    right: 0;
+    top:50%;
+    color: #fff;
+    font-size: 26px;
+    line-height: 90px;
+    text-align: center;
+ }
 
 
 
