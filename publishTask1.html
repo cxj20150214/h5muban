@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/base.css">
     <!-- 首页 -->
     <link rel="stylesheet" href="css/conn.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobileSelect.css">
 </head>
 <script>
     (function () { //手机版、小程序750设计稿转手机等比例显示
@@ -23,6 +25,9 @@
         }
     })();
 </script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/mobileSelect.js"></script>
+<script type="text/javascript" src="js/selectDate.js"></script>
 
 <body class="bopage1 pubtask-page">
     <form action="">
@@ -84,16 +89,27 @@
         </div>
     </div>
     <p class="ptask-p1"><span class="ptask-sp1">标题</span><input type="text" class="ptask-in1" placeholder="项目名称+核心要求，12字以内"></p>
-    <p class="ptask-p2">
+    <div class="ptask-p2">
         <span class="ptask-sp1">截止时间</span>
-        <span class="ptask-sp2">
-            <select  id="" class="ptask-se1">
-                <option value="" selected>12</option>
-                <option value="">13</option>
-            </select>
+        <p class="ptask-sp2" id="ptask-sp2">
+            <span class="txt">选择时间</span>
             <i><img src="img/right.png"></i>
-        </span>
-    </p>
+            <ul>
+                <li id="date"></li>
+            </ul>
+            <script type="text/javascript">
+                $.selectDate("#date", {
+                    start: 2020,
+                    end: 2058,
+                    select: [2020, 5, 1],
+                    title: ' '
+                }, function (data) {
+                    $('.txt').text(data.year+'年'+data.month+'月'+data.day+'日')
+                });
+                </script>
+        </p>
+
+    </div>
     <p class="ptask-p3">
         <span class="ptask-sp4">出价<i class="ptask-i1">最低出价<i class="ptask-i2">0.5</i>元</i></span>
         <span class="ptask-sp3"><input type="text" placeholder="0">元</span>
@@ -201,7 +217,15 @@
                 $("#pastbtn2cont").show()
             }
         })
+        $("#ptask-sp2").click(function(){
+            $(".mobileSelect-show").fadeToggle()
+        })
+        $(".mobileSelect-show .btn").click(function(){
+            $(".mobileSelect-show").fadeToggle()
+        })        
+
     </script>
+
 </body>
 
 </html>
