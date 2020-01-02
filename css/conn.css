@@ -8,6 +8,11 @@
 .fr{
     float: right;
 }
+input:focus::-webkit-input-placeholder{color:#f3f2f2;}
+input:focus:-ms-input-placeholder {color:#f3f2f2;
+}
+input:focus::-moz-placeholder {color:#f3f2f2;
+}
 .ce-header{
     background-image: url("../img/img23.png");
     background-size: 100%;
@@ -383,7 +388,7 @@ a.ce-lia{
 .invest-font4{
     margin: 90px 60px;
 }
-.inv-btn1,.task-btn1,.adva-btn1,.advae-btn1,.invec-btn1,.sugg-btn1{
+.inv-btn1,.task-btn1,.adva-btn1,.advae-btn1,.invec-btn1,.sugg-btn1,.my-insbtn1{
     border-radius: 45px;
     color: #fff;
     font-size: 32px;
@@ -393,13 +398,13 @@ a.ce-lia{
     line-height: 90px;
     border: 0;
 }
-.task-cont1,.adva-cont1,.advae-cont1,.invec-cont1,.changp-cont1{
+.task-cont1,.adva-cont1,.advae-cont1,.invec-cont1,.changp-cont1,.my-ins1{
     margin: 30px;
 }
 .task-cont2,.adva-cont2,.advae-cont2,.invec-cont2,.changp-cont2{
     margin: 100px 0;
 }
-.task-p1,.adva-p1,.advae-p1,.invec-p1{
+.task-p1,.adva-p1,.advae-p1,.invec-p1,.my-insp1{
     border-bottom: 1px solid #ced9e0;
     font-size: 32px;
     color: #333333;
@@ -442,7 +447,7 @@ a.ce-lia{
 .advae-cont3{
     text-align: center;
 }
-.task-sp5 input,.adva-sp5 input{
+.task-sp5 input,.adva-sp5 input,.my-inssp5 input{
     color: #b3b3b3;
     border: 0;
     text-align: right;
@@ -1073,7 +1078,7 @@ padding-top: 30px;}
 .ptask-cont1 input:checked + label{
     background: url("../img/img44.png") left center no-repeat;
 }
-.ptask-cont1{
+.ptask-cont1,.my-inscont1{
     padding: 20px 30px;
 }
 .pubtask2 p{
@@ -1089,6 +1094,7 @@ padding-top: 30px;}
     padding-top: 20px;
     padding-left: 30px;
 }
+.my-inscont2{padding-top: 20px;}
 .ptask-cont2 label{
     background: url("../img/img43.png") left center no-repeat;
     padding-left: 60px;
@@ -1114,10 +1120,10 @@ padding-top: 30px;}
     color: #000;
     padding-right: 30px;
 }
-.ptask-in1,.ptask-sp2{
+.ptask-in1,.ptask-sp2,.my-insp2{
     flex: auto;
 }
-.ptask-p2{
+.ptask-p2,.my-insp2{
     text-align: right;
 }
 .ptask-i1{
@@ -1435,7 +1441,38 @@ padding-top: 30px;}
     line-height: 90px;
     text-align: center;
  }
+.my-inssp1{
+    margin-right: -20px;
+    padding-right: 30px;
+    position: relative;
+    display: inline-block;
 
-
+}
+.my-inssp1 i{
+    position: relative;
+    z-index: -1;
+}
+.my-inssp2 {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    right: 8px;
+    width: calc(100vw - 60px);
+}
+.my-inssp2 li{
+    min-width: 300px;
+    padding-top: 10px;
+    padding: 20px 30px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+}
+.my-insp2{
+    margin-top: 100px;
+}
+.my-inssp1 label{
+    font-weight: normal;
+    color: #b3b3b3;
+}
 
 
