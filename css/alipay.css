@@ -309,3 +309,22 @@
   color: #999;
   margin-top: 20px;
 }
+.detail h2 {
+  font-size: 36px;
+  margin-top: 60px;
+}
+.detail .time {
+  font-size: 24px;
+  color: #999;
+  margin-top: 15px;
+}
+.detail img {
+  margin-top: 20px;
+  border-radius: 8px;
+}
+.detail .detail_box {
+  margin-top: 20px;
+}
+.detail .detail_box p {
+  font-size: 24px;
+}
