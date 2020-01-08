@@ -14,6 +14,8 @@
     <link rel="stylesheet" href="css/conn.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/mobileSelect.css">
+    <link href="css/common.css" type="text/css" rel="stylesheet"/>
+<link href="css/index.css" type="text/css" rel="stylesheet"/>
 </head>
 <script>
     (function () { //手机版、小程序750设计稿转手机等比例显示
@@ -132,13 +134,33 @@
             <span class="ptask-sp6">上传验证图样例，</span>
             <span class="ptask-sp7">最多可上传5张</span>
             <span class="ptask-p71"><img src="img/right.png" id="pastbtn2"></span>
+            
         </p>
-        <div class="ptask-p8" id="pastbtn2cont" style="display: none;">
-            <p><img src="img/img37.png" alt=""></p>
-            <label class="sugg-p5" for="sugg-fileimg">
-                <input type="file" id="sugg-fileimg" accept="image/jpeg,image/png,image/gif" style="display: none;">
-            </label>
+        <div class="img-box full">
+            <section class=" img-section">
+                <div class="z_photo upimg-div clear" >
+                       <!--<section class="up-section fl">
+                            <span class="up-span"></span>
+                            <img src="/img/buyerCenter/a7.png" class="close-upimg">
+                            <img src="/img/buyerCenter/3c.png" class="type-upimg" alt="添加标签">
+                            <img src="/img/test2.jpg" class="up-img">
+                            <p class="img-namep"></p>
+                            <input id="taglocation" name="taglocation" value="" type="hidden">
+                            <input id="tags" name="tags" value="" type="hidden">
+                        </section>-->
+                         <section class="z_file fl">
+                            <img src="img/a11.png" class="add-img">
+                            <input type="file" name="file" id="file" class="file" value="" accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+                         </section>
+                 </div>
+             </section>
         </div>
+        <aside class="mask works-mask">
+            <div class="mask-content">
+                <p class="del-p ">您确定要删除作品图片吗？</p>
+                <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
+            </div>
+        </aside>
     </div>
     <div class="ptask-p9">
         <span class="ptask-sp8">操作说明<i class="ptask-i2">简单易懂的操作指南大幅度提高接单效率</i></span>
@@ -225,7 +247,7 @@
         })        
 
     </script>
-
+<script src="js/imgUp.js"></script>
 </body>
 
 </html>
