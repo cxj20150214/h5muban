@@ -1305,9 +1305,15 @@ padding-top: 30px;}
 .ptask-b1 label{
     width: 26px;
     height: 27px;
-    vertical-align: -10px;
-    background: url("../img/img45.png") left center no-repeat;
+    vertical-align: -5px;
+    /* background: url("../img/img45.png") left center no-repeat; */
     background-size: 100%;
+    background-color: #fff;
+    border:1px solid #999;
+}
+.ptask-b1 label.active{
+    background: url("../img/img45.png") left center no-repeat;
+    border:0px;
 }
 .ptask-b1 input:checked label{
     background: url("../img/img46.png") left center no-repeat;  

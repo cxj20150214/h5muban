@@ -12,6 +12,8 @@
     <link rel="stylesheet" href="css/base.css">
     <!-- 首页 -->
     <link rel="stylesheet" href="css/conn.css">
+    <link href="css/common.css" type="text/css" rel="stylesheet" />
+    <link href="css/index.css" type="text/css" rel="stylesheet" />
 </head>
 <script>
     (function () { //手机版、小程序750设计稿转手机等比例显示
@@ -42,9 +44,26 @@
             <textarea name="" id="" placeholder="请输入反馈的问题，我们会您更好的服务"></textarea>
         </div>
         <div class="sugg-p6">
-            <label class="sugg-p5" for="sugg-fileimg">
-            <input type="file" id="sugg-fileimg" accept="image/jpeg,image/png,image/gif" style="display: none;">
-            </label>
+            <div class="img-box full">
+                <section class=" img-section">
+                    <div class="z_photo upimg-div clear">
+                        <!--<section class="up-section fl">
+                            <span class="up-span"></span>
+                            <img src="/img/buyerCenter/a7.png" class="close-upimg">
+                            <img src="/img/buyerCenter/3c.png" class="type-upimg" alt="添加标签">
+                            <img src="/img/test2.jpg" class="up-img">
+                            <p class="img-namep"></p>
+                            <input id="taglocation" name="taglocation" value="" type="hidden">
+                            <input id="tags" name="tags" value="" type="hidden">
+                        </section>-->
+                        <section class="z_file fl">
+                            <img src="img/a11.png" class="add-img">
+                            <input type="file" name="file" id="file" class="file" value=""
+                                accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
+                        </section>
+                    </div>
+                </section>
+            </div>
             <span>（上传相关截图）</span>
         </div>
         <div>
@@ -61,6 +80,7 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="js/imgUp.js"></script>
 </body>
 
 </html>
