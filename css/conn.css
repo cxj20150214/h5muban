@@ -55,6 +55,9 @@ input:focus::-moz-placeholder {color:#f3f2f2;
     padding-right: 10px;
     line-height: 40px;
 }
+.ce-infs{
+    margin-right: 150px;
+}
 .ce-change{
     width: 80px;
     height: 40px;
@@ -119,6 +122,9 @@ a.ce-lia{
 }
 .ce-lifont9{
     background: url("../img/img10.png") no-repeat left 45px;   
+}
+.ce-lifont10{
+    background: url("../img/img50.png") no-repeat left 45px;   
 }
 .ce-img1{
     float: right;
