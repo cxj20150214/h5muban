@@ -169,28 +169,26 @@
             <span class="ptask-sp9"><img src="img/right.png" id="pastbtn1"></span>
         </div>
         <div class="ptask-p10" id="pastbtn1cont" style="display: none;">
-            <div class="ptask-d1">
-                <div class="ptask-d2">
-                    <p class="ptask-1d2">1</p>
-                    <p class="ptask-1d3">删除</p>
-                </div>
-                <div class="ptask-d3"><img src="img/img15.png" alt=""></div>
-                <div class="ptask-d4">
-                    <textarea id="" placeholder="输入说明"></textarea>
-                </div>
-            </div>
-            <div class="ptask-d1">
-                <div class="ptask-d2">
-                    <p class="ptask-1d2">1</p>
-                    <p class="ptask-1d3">删除</p>
-                </div>
-                <div class="ptask-d3"><img src="img/img15.png" alt=""></div>
-                <div class="ptask-d4">
-                    <textarea id="" placeholder="输入说明"></textarea>
+            <div class="bz_box">
+                <div class="ptask-d1">
+                    <div class="ptask-d2">
+                        <p class="ptask-1d2">1</p>
+                        <p class="ptask-1d3">删除</p>
+                    </div>
+                    <div class="ptask-d3">
+                        <img class="file-avatar-img" src="img/img15.png" width="200" />
+                        <div class="file_box">
+                            <div class="file_img">选择图片</div>
+                            <input type="file" class="file-avatar" name="avatar">
+                        </div>
+                    </div>
+                    <div class="ptask-d4">
+                        <textarea id="" placeholder="输入说明"></textarea>
+                    </div>
                 </div>
             </div>
             <div class="ptask-d5">
-                <button>添加步骤</button>
+                <div class="addbz">添加步骤</div>
             </div>
         </div>
         <p class="ptask-c1">文字验证</p>
@@ -257,6 +255,43 @@
         })
     </script>
     <script src="js/imgUp.js"></script>
+    <script type="application/javascript">
+        $(function () {
+            $(document).on('change', ".file-avatar", function (event) {
+                var _file = $(this);
+                var _fileObj = _file[0];
+                var windowURL = window.URL || window.webkitURL;
+                var dataURL = windowURL.createObjectURL(_fileObj.files[0]);
+                var aaa = $(this).parents('.ptask-d1').find('.file-avatar-img');
+                console.log(aaa);
+                aaa.attr('src', dataURL);
+            });
+        });
+    </script>
+    <script>
+        var count = 1;
+        $(document).on('click', '.addbz', function () {
+            count = count + 1;
+            console.log(count)
+            var thisbz = '<div class="ptask-d1">' +
+                '                    <div class="ptask-d2">' +
+                '                        <p class="ptask-1d2">' + count +'</p>' +
+                '                        <p class="ptask-1d3">删除</p>' +
+                '                    </div>' +
+                '                    <div class="ptask-d3">' +
+                '                        <img class="file-avatar-img" src="img/img15.png" width="200" />' +
+                '                        <div class="file_box">' +
+                '                            <div class="file_img">选择图片</div>' +
+                '                            <input type="file" class="file-avatar" name="avatar">' +
+                '                        </div>' +
+                '                    </div>' +
+                '                    <div class="ptask-d4">' +
+                '                        <textarea id="" placeholder="输入说明" name="'+ inputxt + '"></textarea>' +
+                '                    </div>' +
+                '                </div>';
+            $('.bz_box').append(thisbz);
+        })
+    </script>
 </body>
 
 </html>
