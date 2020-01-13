@@ -173,7 +173,6 @@
                 <div class="ptask-d1">
                     <div class="ptask-d2">
                         <p class="ptask-1d2">1</p>
-                        <p class="ptask-1d3">删除</p>
                     </div>
                     <div class="ptask-d3">
                         <img class="file-avatar-img" src="img/img15.png" width="200" />
@@ -183,7 +182,7 @@
                         </div>
                     </div>
                     <div class="ptask-d4">
-                        <textarea id="" placeholder="输入说明"></textarea>
+                        <textarea id="" placeholder="输入说明" name="text1"></textarea>
                     </div>
                 </div>
             </div>
@@ -269,13 +268,31 @@
         });
     </script>
     <script>
-        var count = 1;
+        $(document).on('click', '.ptask-1d3', function () {
+            var sc = '<p class="ptask-1d3">删除</p>';
+            $(this).parents('.ptask-d1').remove();
+            var scNum = $('.bz_box .ptask-d1').length;
+            console.log(scNum)
+            if (scNum > 1) {
+                $('.bz_box .ptask-d1:last').find('.ptask-d2').append(sc);
+            }
+        })
         $(document).on('click', '.addbz', function () {
+            $('.bz_box .ptask-d1 .ptask-1d3').remove();
+            var num = $('.bz_box .ptask-d1').length;
+            var count = num;
+            var inputxt = num;
+            // for( i = 1; i < num; i++){
+            //     console.log(i)
+            //     return i
+            // }
+            // console.log(num)
             count = count + 1;
+            inputxt = inputxt + 1;
             console.log(count)
             var thisbz = '<div class="ptask-d1">' +
                 '                    <div class="ptask-d2">' +
-                '                        <p class="ptask-1d2">' + count +'</p>' +
+                '                        <p class="ptask-1d2">' + count + '</p>' +
                 '                        <p class="ptask-1d3">删除</p>' +
                 '                    </div>' +
                 '                    <div class="ptask-d3">' +
@@ -286,7 +303,7 @@
                 '                        </div>' +
                 '                    </div>' +
                 '                    <div class="ptask-d4">' +
-                '                        <textarea id="" placeholder="输入说明" name="'+ inputxt + '"></textarea>' +
+                '                        <textarea id="" placeholder="输入说明" name="text' + inputxt + '"></textarea>' +
                 '                    </div>' +
                 '                </div>';
             $('.bz_box').append(thisbz);
