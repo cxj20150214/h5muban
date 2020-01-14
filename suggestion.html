@@ -44,32 +44,17 @@
             <textarea name="" id="" placeholder="请输入反馈的问题，我们会您更好的服务"></textarea>
         </div>
         <div class="sugg-p6">
-            <div class="img-box full">
-                <section class=" img-section">
-                    <div class="z_photo upimg-div clear">
-                        <!--<section class="up-section fl">
-                            <span class="up-span"></span>
-                            <img src="/img/buyerCenter/a7.png" class="close-upimg">
-                            <img src="/img/buyerCenter/3c.png" class="type-upimg" alt="添加标签">
-                            <img src="/img/test2.jpg" class="up-img">
-                            <p class="img-namep"></p>
-                            <input id="taglocation" name="taglocation" value="" type="hidden">
-                            <input id="tags" name="tags" value="" type="hidden">
-                        </section>-->
-                        <section class="z_file fl">
-                            <img src="img/a11.png" class="add-img">
-                            <input type="file" name="file" id="file" class="file" value=""
-                                accept="image/jpg,image/jpeg,image/png,image/bmp" multiple />
-                        </section>
+            <div class="bz">
+                <div class="bz_child sug">
+                    <!-- <p class="title">步骤1：</p>
+                    <input type="text" class="bz_txt" name="text1"> -->
+                    <img class="file-avatar-img" src="img/a11.png" width="200" />
+                    <div class="file_box">
+                        <div class="file_img">选择图片</div>
+                        <input type="file" class="file-avatar" name="avatar">
                     </div>
-                </section>
-            </div>
-            <aside class="mask works-mask">
-                <div class="mask-content">
-                    <p class="del-p ">您确定要删除作品图片吗？</p>
-                    <p class="check-p"><span class="del-com wsdel-ok">确定</span><span class="wsdel-no">取消</span></p>
                 </div>
-            </aside>
+            </div>
             <span>（上传相关截图）</span>
         </div>
         <div>
@@ -86,7 +71,19 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js"></script>
     <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
-    <script src="js/imgUp.js"></script>
+    <script type="application/javascript">
+        $(function () {
+            $(document).on('change', ".file-avatar", function (event) {
+                var _file = $(this);
+                var _fileObj = _file[0];
+                var windowURL = window.URL || window.webkitURL;
+                var dataURL = windowURL.createObjectURL(_fileObj.files[0]);
+                var aaa = $(this).parents('.bz_child').find('.file-avatar-img');
+                console.log(aaa);
+                aaa.attr('src', dataURL);
+            });
+        });
+    </script>
 </body>
 
 </html>

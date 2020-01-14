@@ -702,6 +702,8 @@ a.ce-lia{
     margin-top: 50px;
     margin-bottom: 30px;
     color: #cccccc;
+    display: flex;
+    flex-direction: column;
 }
 .sugg-p6 span{
     vertical-align: 15px;
