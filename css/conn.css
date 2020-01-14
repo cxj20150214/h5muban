@@ -1615,3 +1615,7 @@ padding-top: 30px;}
     font-size: 32px;
     text-align: center;
 }
+.mtask-top.task span{
+    width:50%;
+    text-align: center;
+}
