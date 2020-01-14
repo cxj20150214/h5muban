@@ -892,6 +892,12 @@ a.ce-lia{
     padding: 30px 30px 20px;
     border-bottom: 4px solid transparent;
 }
+.mtask-top.exam span{
+    width:50%;
+    text-align: center;
+    padding: 30px 30px 20px;
+    border-bottom: 4px solid transparent;
+}
 .mtask-top span.active{
     border-bottom-color:#f56364;
 }
@@ -1513,3 +1519,90 @@ padding-top: 30px;}
     width: 440px;
 }
 
+.list {
+    width: 690px;
+    margin: 30px auto 0px;
+    background-color: #fff;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+.list ul {
+    margin-top: 20px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+.list ul li {
+    height: 130px;
+    line-height: 130px;
+  }
+.list ul li .gz {
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-size: 26px;
+    float: right;
+    border: 1px solid #999;
+    color: #999;
+    border-radius: 15px;
+    margin-top: 40px;
+  }
+.list ul li img {
+    width: 90px;
+    height: 90px;
+    float: left;
+    margin-top: 25px;
+  }
+.list ul li .txt {
+    width: 520px;
+    float: right;
+    border-bottom: 1px solid #d5d5d5;
+  }
+  .list ul li .txt .name {
+    font-size: 30px;
+    float: left;
+    width: 150px;
+    overflow: hidden;
+    height: 130px;
+  }
+  .list ul li .txt .id {
+    font-size: 30px;
+    color: #b2b2b2;
+    float: left;
+  }
+  .box2_1 {
+    width: 50%;
+    padding-left: 20px;
+    font-size: 32px;
+    height: 110px;
+    line-height: 110px;
+    position: relative;
+}
+.box2_1::before {
+    content: '';
+    width: 5px;
+    height: 24px;
+    background-color: #fe616a;
+    position: absolute;
+    left: 0px;
+    top: 40px;
+}
+.tit{
+    width:100%;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.num_order{
+    float: right;
+    line-height:110px;
+    font-size: 28px;
+    color: #999;
+}
+.list ul li .gz.sh{
+    color: #ef841b;
+    border:1px solid #ef841b;
+}
