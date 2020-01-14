@@ -1619,3 +1619,7 @@ padding-top: 30px;}
     width:50%;
     text-align: center;
 }
+.content_rw img{
+    margin:20px auto;
+    max-width: 100%;
+}
