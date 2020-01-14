@@ -1606,3 +1606,12 @@ padding-top: 30px;}
     color: #ef841b;
     border:1px solid #ef841b;
 }
+.content_rw{
+    width: 690px;
+    margin:0px auto;
+    padding:20px;
+}
+.content_rw h2{
+    font-size: 32px;
+    text-align: center;
+}
